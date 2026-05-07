@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Header from './components/Header';
 import ScrollMarquee from './components/ScrollMarquee';
 import AboutSection from './components/AboutSection';
+import FeaturesGrid from './components/FeaturesGrid';
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Hero />
       <ScrollMarquee />
       <AboutSection />
+      <FeaturesGrid />
     </main>
   );
 }
