@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Header from './components/Header';
 import ScrollMarquee from './components/ScrollMarquee';
+import AboutSection from './components/AboutSection';
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <Header />
       <Hero />
       <ScrollMarquee />
+      <AboutSection />
     </main>
   );
 }
