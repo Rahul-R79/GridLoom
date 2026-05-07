@@ -2,17 +2,19 @@
 
 import React, { useState, useEffect } from 'react';
 
-interface AutoplayDotCarouselProps {
+interface CarouselProps {
   children: React.ReactNode;
   autoplayInterval?: number;
   className?: string;
+  theme?: 'light' | 'dark';
 }
 
-export default function AutoplayDotCarousel({
+export default function Carousel({
   children,
   autoplayInterval = 4000,
   className = '',
-}: AutoplayDotCarouselProps) {
+  theme = 'light',
+}: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const childrenArray = React.Children.toArray(children);
   const totalSlides = childrenArray.length;
@@ -26,6 +28,9 @@ export default function AutoplayDotCarousel({
   }, [totalSlides, autoplayInterval]);
 
   if (totalSlides === 0) return null;
+
+  const baseDotClass = theme === 'dark' ? 'border-white' : 'border-black';
+  const activeDotClass = theme === 'dark' ? 'bg-white' : 'bg-black';
 
   return (
     <div className={`flex flex-col items-center ${className}`}>
@@ -50,8 +55,8 @@ export default function AutoplayDotCarousel({
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               aria-label={`Go to slide ${idx + 1}`}
-              className={`h-3 w-3 rounded-full border-2 border-black transition-colors ${
-                idx === currentIndex ? 'bg-black' : 'bg-transparent'
+              className={`h-3 w-3 rounded-full border-2 transition-colors ${baseDotClass} ${
+                idx === currentIndex ? activeDotClass : 'bg-transparent'
               }`}
             />
           ))}

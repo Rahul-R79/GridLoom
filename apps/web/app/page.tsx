@@ -4,6 +4,7 @@ import ScrollMarquee from './components/ScrollMarquee';
 import AboutSection from './components/AboutSection';
 import FeaturesGrid from './components/FeaturesGrid';
 import SystemSection from './components/SystemSection';
+import AIFeaturesSection from './components/AIFeaturesSection';
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <AboutSection />
       <FeaturesGrid />
       <SystemSection />
+      <AIFeaturesSection />
     </main>
   );
 }
