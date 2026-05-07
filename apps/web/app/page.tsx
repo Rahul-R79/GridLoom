@@ -3,6 +3,7 @@ import Header from './components/Header';
 import ScrollMarquee from './components/ScrollMarquee';
 import AboutSection from './components/AboutSection';
 import FeaturesGrid from './components/FeaturesGrid';
+import SystemSection from './components/SystemSection';
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <ScrollMarquee />
       <AboutSection />
       <FeaturesGrid />
+      <SystemSection />
     </main>
   );
 }
