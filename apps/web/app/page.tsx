@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection';
 import FeaturesGrid from './components/FeaturesGrid';
 import SystemSection from './components/SystemSection';
 import AIFeaturesSection from './components/AIFeaturesSection';
+import PricingSection from './components/PricingSection';
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <FeaturesGrid />
       <SystemSection />
       <AIFeaturesSection />
+      <PricingSection />
     </main>
   );
 }
