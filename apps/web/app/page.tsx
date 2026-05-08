@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import InteractiveWorkspace from './components/InteractiveWorkspace';
 import Header from './components/Header';
 import ScrollMarquee from './components/ScrollMarquee';
 import AboutSection from './components/AboutSection';
@@ -9,7 +10,7 @@ import PricingSection from './components/PricingSection';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center overflow-hidden bg-white">
+    <main className="flex min-h-screen w-full flex-col items-center bg-white">
       <Header />
       <Hero />
       <ScrollMarquee />
@@ -18,6 +19,7 @@ export default function Page() {
       <SystemSection />
       <AIFeaturesSection />
       <PricingSection />
+      <InteractiveWorkspace />
     </main>
   );
 }
