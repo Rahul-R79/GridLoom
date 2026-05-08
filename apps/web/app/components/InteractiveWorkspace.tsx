@@ -164,7 +164,7 @@ export default function InteractiveWorkspace() {
           </button>
         </motion.div>
 
-        <div className="absolute top-[40%] left-1/2 z-30 -translate-x-1/2 sm:top-[50%]">
+        <div className="absolute top-[35%] left-1/2 z-30 -translate-x-1/2 sm:top-[45%]">
           <CollabCursor
             color="#8b5cf6"
             name="You"
@@ -195,28 +195,15 @@ export default function InteractiveWorkspace() {
         </div>
 
         <motion.div
-          className="absolute left-1/2 z-10 w-[92%] max-w-4xl overflow-hidden border-2 border-black bg-white shadow-[6px_6px_0_#000] sm:border-[3px] sm:shadow-[12px_12px_0_#000]"
-          style={{ bottom: '-20px', x: '-50%', y: windowY, rotate: bp === 'sm' ? 0 : -1 }}
+          className="absolute left-1/2 z-10 w-[95%] max-w-5xl overflow-hidden border-2 border-black bg-white shadow-[8px_8px_0_#000] sm:border-[3px] sm:shadow-[16px_16px_0_#000]"
+          style={{ bottom: '40px', x: '-50%', y: windowY, rotate: bp === 'sm' ? 0 : -1 }}
         >
-          <div className="flex h-6 items-center gap-1.5 border-b-2 border-black bg-neutral-100 px-3 sm:h-8 sm:gap-2 sm:border-b-[3px] sm:px-4">
-            <div className="flex gap-1.5 sm:gap-2">
-              <div className="h-2 w-2 rounded-full border border-black bg-red-500 sm:h-3 sm:w-3 sm:border-2" />
-              <div className="h-2 w-2 rounded-full border border-black bg-yellow-400 sm:h-3 sm:w-3 sm:border-2" />
-              <div className="h-2 w-2 rounded-full border border-black bg-green-500 sm:h-3 sm:w-3 sm:border-2" />
-            </div>
-            <div className="mx-auto hidden h-5 w-1/3 items-center justify-center rounded border-2 border-black bg-white sm:flex">
-              <span className="font-mono text-[9px] tracking-wide text-neutral-400">
-                gridloom.com/dashboard
-              </span>
-            </div>
-          </div>
-
-          <div className="relative w-full bg-neutral-50" style={{ aspectRatio: '16/9' }}>
+          <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
             <Image
               src="/images/workspace.webp"
               alt="GridLoom Workspace"
               fill
-              className="object-contain"
+              className="object-cover"
               priority
             />
           </div>

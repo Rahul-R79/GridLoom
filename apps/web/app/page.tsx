@@ -7,6 +7,7 @@ import FeaturesGrid from './components/FeaturesGrid';
 import SystemSection from './components/SystemSection';
 import AIFeaturesSection from './components/AIFeaturesSection';
 import PricingSection from './components/PricingSection';
+import ComparisonSection from './components/ComparisonSection';
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
       <AIFeaturesSection />
       <PricingSection />
       <InteractiveWorkspace />
+      <ComparisonSection />
     </main>
   );
 }
