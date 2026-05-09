@@ -8,6 +8,7 @@ import SystemSection from './components/SystemSection';
 import AIFeaturesSection from './components/AIFeaturesSection';
 import PricingSection from './components/PricingSection';
 import ComparisonSection from './components/ComparisonSection';
+import JoinCohortSection from './components/JoinCohortSection';
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
       <PricingSection />
       <InteractiveWorkspace />
       <ComparisonSection />
+      <JoinCohortSection />
     </main>
   );
 }
