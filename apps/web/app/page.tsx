@@ -9,6 +9,7 @@ import AIFeaturesSection from './components/AIFeaturesSection';
 import PricingSection from './components/PricingSection';
 import ComparisonSection from './components/ComparisonSection';
 import JoinCohortSection from './components/JoinCohortSection';
+import Footer from './components/Footer';
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       <InteractiveWorkspace />
       <ComparisonSection />
       <JoinCohortSection />
+      <Footer />
     </main>
   );
 }
