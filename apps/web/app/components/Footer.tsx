@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { Box, Book, Share2, AtSign, MessageSquare } from 'lucide-react';
 
@@ -20,9 +18,12 @@ export default function Footer() {
               <p className="max-w-[200px] text-xs leading-tight font-black tracking-widest text-neutral-500 uppercase">
                 WHERE STRUCTURED DATA MEETS VISUAL THINKING.
               </p>
-              <button className="bg-primary border-[3px] border-black px-8 py-3 text-xs font-black tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0_#000]">
+              <Link
+                href="/login"
+                className="bg-primary inline-block border-[3px] border-black px-8 py-3 text-xs font-black tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0_#000]"
+              >
                 START BUILDING
-              </button>
+              </Link>
             </div>
 
             {/* Product Column (Light Gray) */}

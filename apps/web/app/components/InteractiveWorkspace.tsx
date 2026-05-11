@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent, MotionValue } from 'framer-motion';
+import Link from 'next/link';
 import Image from 'next/image';
 
 type Breakpoint = 'sm' | 'md' | 'lg';
@@ -159,9 +160,12 @@ export default function InteractiveWorkspace() {
             <br />
             <span className="text-tertiary">DATA MEETS CANVAS</span>
           </h2>
-          <button className="bg-primary mt-4 cursor-pointer border-2 border-black px-6 py-2.5 text-xs font-bold tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] sm:mt-6 sm:border-[3px] sm:px-8 sm:py-3 sm:text-sm sm:shadow-[6px_6px_0_#000] sm:hover:shadow-[4px_4px_0_#000]">
+          <Link
+            href="/login"
+            className="bg-primary mt-4 inline-block cursor-pointer border-2 border-black px-6 py-2.5 text-xs font-bold tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] sm:mt-6 sm:border-[3px] sm:px-8 sm:py-3 sm:text-sm sm:shadow-[6px_6px_0_#000] sm:hover:shadow-[4px_4px_0_#000]"
+          >
             START BUILDING →
-          </button>
+          </Link>
         </motion.div>
 
         <div className="absolute top-[35%] left-1/2 z-30 -translate-x-1/2 sm:top-[45%]">
@@ -204,7 +208,6 @@ export default function InteractiveWorkspace() {
               alt="GridLoom Workspace"
               fill
               className="object-cover"
-              priority
             />
           </div>
         </motion.div>

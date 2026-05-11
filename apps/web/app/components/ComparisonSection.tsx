@@ -1,6 +1,7 @@
 'use client';
 
 import { Check, X, AlertTriangle, Shield, Zap, Network } from 'lucide-react';
+import Link from 'next/link';
 import Carousel from './Carousel';
 
 type Status = 'yes' | 'no' | 'partial' | 'warning';
@@ -154,9 +155,12 @@ export default function ComparisonSection() {
               </span>
             </span>
           </h3>
-          <button className="bg-secondary group relative border-3 border-black px-8 py-5 text-lg font-black tracking-tighter text-black uppercase shadow-[8px_8px_0_white] transition-all hover:translate-y-1 hover:shadow-[4px_4px_0_white]">
+          <Link
+            href="/login"
+            className="bg-secondary group relative border-[3px] border-black px-8 py-5 text-lg font-black tracking-tighter text-black uppercase shadow-[8px_8px_0_white] transition-all hover:translate-y-1 hover:shadow-[4px_4px_0_white]"
+          >
             BUILD YOUR FIRST GRID
-          </button>
+          </Link>
         </div>
 
         {/* Bottom Highlights */}

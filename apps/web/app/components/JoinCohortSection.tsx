@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function JoinCohortSection() {
@@ -30,11 +31,14 @@ export default function JoinCohortSection() {
               future of GridLoom.
             </p>
 
-            <button className="group relative border-[3px] border-black bg-neutral-900 px-8 py-4 text-sm font-black tracking-widest text-white uppercase shadow-[6px_6px_0_#000] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0_#000] sm:px-10 sm:py-5 sm:text-base">
+            <Link
+              href="/login"
+              className="group relative inline-block border-[3px] border-black bg-neutral-900 px-8 py-4 text-sm font-black tracking-widest text-white uppercase shadow-[6px_6px_0_#000] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0_#000] sm:px-10 sm:py-5 sm:text-base"
+            >
               <span className="flex items-center gap-2">
                 START BUILDING <ArrowUpRight className="h-5 w-5 sm:h-6 sm:w-6" />
               </span>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>
