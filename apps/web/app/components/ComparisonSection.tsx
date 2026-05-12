@@ -156,7 +156,7 @@ export default function ComparisonSection() {
             </span>
           </h3>
           <Link
-            href="/login"
+            href="/signup"
             className="bg-secondary group relative border-[3px] border-black px-8 py-5 text-lg font-black tracking-tighter text-black uppercase shadow-[8px_8px_0_white] transition-all hover:translate-y-1 hover:shadow-[4px_4px_0_white]"
           >
             BUILD YOUR FIRST GRID

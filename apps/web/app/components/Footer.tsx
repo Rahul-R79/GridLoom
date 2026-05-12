@@ -19,7 +19,7 @@ export default function Footer() {
                 WHERE STRUCTURED DATA MEETS VISUAL THINKING.
               </p>
               <Link
-                href="/login"
+                href="/signup"
                 className="bg-primary inline-block border-[3px] border-black px-8 py-3 text-xs font-black tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0_#000]"
               >
                 START BUILDING
