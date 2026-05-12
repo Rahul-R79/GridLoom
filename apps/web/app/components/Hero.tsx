@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
 
           <Link
-            href="/login"
+            href="/signup"
             className="group bg-primary flex items-center gap-2 rounded-lg border-[3px] border-black px-6 py-3 text-xs font-black tracking-widest text-black uppercase shadow-[4px_4px_0_#000] transition-all duration-150 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0_#000] sm:px-8 sm:py-4 sm:text-sm md:text-base md:shadow-[6px_6px_0_#000] md:hover:shadow-[8px_8px_0_#000]"
             aria-label="Start building"
           >

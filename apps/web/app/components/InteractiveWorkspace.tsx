@@ -161,7 +161,7 @@ export default function InteractiveWorkspace() {
             <span className="text-tertiary">DATA MEETS CANVAS</span>
           </h2>
           <Link
-            href="/login"
+            href="/signup"
             className="bg-primary mt-4 inline-block cursor-pointer border-2 border-black px-6 py-2.5 text-xs font-bold tracking-widest text-white uppercase shadow-[4px_4px_0_#000] transition-all hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] sm:mt-6 sm:border-[3px] sm:px-8 sm:py-3 sm:text-sm sm:shadow-[6px_6px_0_#000] sm:hover:shadow-[4px_4px_0_#000]"
           >
             START BUILDING →

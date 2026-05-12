@@ -8,7 +8,7 @@ import { Menu, X } from 'lucide-react';
 const NAV_LINKS = [
   { label: 'ABOUT', href: '/about' },
   { label: 'CONTACT', href: '/contact' },
-  { label: 'LOGIN', href: '/login' },
+  { label: 'LOGIN', href: '/signin' },
 ] as const;
 
 export default function Header() {
